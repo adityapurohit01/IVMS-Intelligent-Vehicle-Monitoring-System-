@@ -1,0 +1,342 @@
+# ============================================
+# IVMS (Intelligent Vehicle Monitoring System)
+# .gitignore - Comprehensive Git Ignore File
+# ============================================
+
+# ==========================================
+# Python
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ==========================================
+# Machine Learning / AI Models
+# ==========================================
+# Large model files (should use Git LFS or external storage)
+*.pb
+*.caffemodel
+*.pth
+*.h5
+*.onnx
+*.tflite
+*.keras
+*.weights
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# Model directories
+models/*.pb
+models/*.caffemodel
+models/*.pth
+models/*.h5
+models/*.onnx
+checkpoints/
+saved_models/
+pretrained/
+
+# ==========================================
+# Database Files
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+traffic_v.db
+
+# ==========================================
+# Media Files (Videos, Images for Testing)
+# ==========================================
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+test_video.mp4
+test_videos/
+output_videos/
+
+# Large image datasets
+datasets/
+data/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Temporary output images
+output/
+results/
+temp/
+tmp/
+
+# ==========================================
+# Office Documents
+# ==========================================
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pdf
+imd ppt formatr.pptx
+
+# ==========================================
+# IDE / Editor Files
+# ==========================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================================
+# Operating System Files
+# ==========================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# Logs and Runtime Files
+# ==========================================
+*.log
+logs/
+*.out
+*.err
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================================
+# Streamlit
+# ==========================================
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ==========================================
+# Backup Files
+# ==========================================
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.~lock.*
+
+# ==========================================
+# Project-Specific Exclusions
+# ==========================================
+# Duplicate directories (you have both "imd anti" and "IVMS (Intelligent Vehicle Monitoring System)/imd anti")
+# Keep only one version in the repo
+"IVMS (Intelligent Vehicle Monitoring System)/"
+
+# ==========================================
+# Git LFS (Large File Storage) - Optional
+# ==========================================
+# If you decide to use Git LFS for large files, add this:
+# .gitattributes should track:
+# *.pb filter=lfs diff=lfs merge=lfs -text
+# *.caffemodel filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text
+# *.pptx filter=lfs diff=lfs merge=lfs -text
+
+# ==========================================
+# Keep These Files (Explicitly NOT Ignored)
+# ==========================================
+# Source code
+!*.py
+!*.md
+!*.txt
+!*.png
+!*.jpg
+!*.jpeg
+
+# Configuration files
+!requirements.txt
+!README.md
+!.gitignore
+!.gitattributes
+
+# Deployment files
+!deploy.prototxt

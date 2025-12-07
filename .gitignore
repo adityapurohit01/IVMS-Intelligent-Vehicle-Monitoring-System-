@@ -207,7 +207,10 @@ tmp/
 *.xlsx
 *.xls
 *.pdf
-imd ppt formatr.pptx
+
+# Exception: Allow project presentation
+!imd\ ppt\ formatr.pptx
+!"imd ppt formatr.pptx"
 
 # ==========================================
 # IDE / Editor Files
